@@ -13,9 +13,12 @@ class Camera:
         self.speed = 0.1
         self.sensitivity = 0.002
 
-    def move(self, keys):
+    def move(self, keys, grab):
         direction_x = math.sin(self.yaw)
         direction_z = math.cos(self.yaw)
+
+        if not grab:
+            return
 
         if keys[K_w]:
             self.x += direction_x * self.speed

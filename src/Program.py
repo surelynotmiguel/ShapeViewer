@@ -119,7 +119,7 @@ class Program:
                 elif event.type == KEYDOWN and event.key == K_g and not hyper_polygon.is_4d and pygame.event.get_grab():
                     special = not special
 
-            camera.move(keys)
+            camera.move(keys, pygame.event.get_grab())
             hyper_polygon.update()
             hyper_polygon.draw(screen, camera, special)
 
