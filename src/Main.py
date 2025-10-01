@@ -1,9 +1,13 @@
 # This is the main file that runs the program. It imports the Program class from src/Program.py and runs the run method.
 
+
 from src.Program import Program
+import install_deps
 
 if __name__ == "__main__":
     print("Running HyperPolygon...\n")
+
+    install_deps.install()
 
     print("Instructions:")
     print("-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-")
