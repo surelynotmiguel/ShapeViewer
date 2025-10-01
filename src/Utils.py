@@ -11,7 +11,7 @@ class Utils:
     WIDTH = user32.GetSystemMetrics(0) - (user32.GetSystemMetrics(0) - 1200)
     HEIGHT = user32.GetSystemMetrics(1) - (user32.GetSystemMetrics(1) - 800)
     APP_NAME = "HyperPolygon"
-    APP_ICON_PATH = "E:/Imagens/raizenbergue.jpg"
+    APP_ICON_PATH = "../assets/images/icons/raizenbergue.jpg"
 
     @staticmethod
     def get_usable_screen_size() -> tuple[int, int]:
